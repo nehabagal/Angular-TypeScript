@@ -1,13 +1,18 @@
 class Passenger{
     firstName:string;
     lastName:string;
-    frequentFlyerno: number
+    frequentFlyerno: number;
     constructor(firstName:string, lastName:string, frequentFlyerno:number){
         this.firstName = firstName;
         this.lastName = lastName;
         this.frequentFlyerno = frequentFlyerno;
     }
+    display():void{
+        console.log(this.firstName + " " + this.lastName + " " + this.frequentFlyerno);
+    }
 }
 var passenger = new Passenger("ABC", "DEF", 11); //object creation using class Passenger
-console.log(passenger.firstName + " " + passenger.lastName + " " + passenger.frequentFlyerno);
+passenger.display();
+var passenger2 = new Passenger("XYZ", "GHJ", 12);
+passenger2.display();
 
